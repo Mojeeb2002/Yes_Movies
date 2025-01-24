@@ -1,10 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const MovieCard = ({
-  movie: { title, vote_average, poster_path, release_date, original_language },
+  movie: {
+    id,
+    title,
+    vote_average,
+    poster_path,
+    release_date,
+    original_language,
+  },
 }) => {
   return (
-    <div className="movie-card cursor-pointer">
+    <Link to={`/movie/${id}`} className="movie-card">
       <img
         src={
           poster_path
@@ -25,10 +33,12 @@ const MovieCard = ({
           <span>•</span>
           <p className="lang">{original_language}</p>
           <span>•</span>
-            <p className="year">{release_date ? release_date.split('-')[0] : 'N/A'}</p>
+          <p className="year">
+            {release_date ? release_date.split("-")[0] : "N/A"}
+          </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
