@@ -12,7 +12,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Film className="w-6 h-6 text-blue-500" />
-              <h3 className="text-xl font-bold text-white">Yes Movies</h3>
+              <h3 className="text-xl font-bold text-white">La Movies</h3>
             </div>
             <p className="text-sm leading-relaxed">
               Your ultimate destination for discovering movies. We provide
@@ -90,10 +90,10 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm">
-              © {currentYear} Yes Movies. All rights reserved.
+              © {currentYear} La Movies. All rights reserved.
             </p>
             <p className="text-sm flex items-center gap-1 mt-4 md:mt-0">
-              Made with <Heart className="w-4 h-4 text-red-500" /> by Yes Movies
+              Made with <Heart className="w-4 h-4 text-red-500" /> by La Movies
               Team
             </p>
           </div>
