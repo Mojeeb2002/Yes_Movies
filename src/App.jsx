@@ -7,6 +7,7 @@ import MovieDetails from "./components/MovieDetails";
 import Footer from "./components/Footer";
 import { useDebounce } from "react-use";
 import { updateSearchCount, getTrendingMovies } from "./appwrite";
+import { Analytics } from "@vercel/analytics/react";
 
 const HomePage = ({
   searchTerm,
@@ -154,6 +155,7 @@ const App = () => {
         <Route path="/movie/:id" element={<MovieDetails />} />
       </Routes>
       <Footer />
+      <Analytics />
     </Router>
   );
 };
